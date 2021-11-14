@@ -207,6 +207,16 @@ view model =
         [ viewStreamNotification model.streamQueue
         , viewContent model
         ]
+    , Html.node "link"
+        [ Html.Attributes.rel "stylesheet"
+        , Html.Attributes.href "https://programming-elm.com/font-awesome-4.7.0/css/font-awesome.min.css"
+        ]
+        []
+    , Html.node "link"
+        [ Html.Attributes.rel "stylesheet"
+        , Html.Attributes.href "../main.css"
+        ]
+        []
     ]
 
 update : Msg -> Model -> ( Model, Cmd Msg )
